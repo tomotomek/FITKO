@@ -91,7 +91,8 @@ informacie o uzivatelovi
 return pocetDniDoKoncaPlatnosti(menoPriezvisko, typKurzu, datum) - prejde kurzami, najde 
 typ. V kurze.trener najde menoPriezvisko a vrati hodnotu datum - datumZaciatkuPlatnosti
 
-najdenie cloveka(menoPriezvisko, typKurzu):
+```
+function najdenie cloveka(menoPriezvisko, typKurzu):
 
 for kurz in poleKurzov:
 
@@ -104,4 +105,4 @@ for kurz in poleKurzov:
 				if clovek.menoPriezvisko == menoPriezvisko
 
 					...
-
+```
