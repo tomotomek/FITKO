@@ -1,9 +1,10 @@
 # FITKO
 zakaznik:
+--
 meno, priezvisko
 datum registracie
 permanentka (datum zaciatku platnosti)
---
+
 insert(menoPriezvisko)
 insert(datumRegistracie)
 insert(zaciatokPermanentky)
@@ -12,11 +13,12 @@ return datumRegistracie
 return zaciatokPermanentky
 
 trener:
+--
 meno, priezvisko
 department (aky kurz vedie)
 maximalny pocet ludi na kurz
 pole, ktore obsahuje pocet kurzov, daneho trenera (2)
--- 
+ 
 return volne miesta- pole bude obsahovat dve polia. Kazde pole bude mat maximalny pocet ludi objektov typu Zakaznik, ak nema meno, tak je to volne miesto
 insert(menoPriezvisko)
 insert(department)
@@ -28,10 +30,11 @@ make() vytvori pole do dvojprvkoveho pola pocetLudiNaKurz objektov typu zakaznik
 prijmiZakaznika(0/1) zada udaje o zakaznikovy do pola podla zvoleneho indexu
 
 kurz:
+--
 typ kurzu
 trener
 pocetVolnychMiest
---
+
 insert(trener)
 insert(nazovKurzu)
 insert(pocetVolnychMiest) - zisti obsadenost kurzu "prebehne polami trenera, a vrati pocet miest bez mena" a prida do clenskej premennej pocetVolnychMiest
@@ -41,10 +44,11 @@ return typKurzu
 return trener
 
 fitko:
+--
 pocet kurzov
 
 pole v pocte kruzov, kazdy prvok je objekt typu kurz
---
+
 vytvori do pola pocet kurzov objektov kurz a nastavi typKruzu - konstruktor
 pridajTreneraDoKurzu(menoPriezvisko, typKurzu) prejde polom kurzov, danemu typu kurzu prideli trenera
 fitko.prihlasNaKurz(menoPriezvisko, typKurzu, datum) v poli kurzov najde typ kurzu, zisti, ci je volne miesto v kurze pocetVolnychMiest(), ak ano, kurz.prihlasNaKurz(menoPriezvisko, datum) 
