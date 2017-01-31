@@ -1,9 +1,9 @@
 # FITKO
 zakaznik:
 --
-[] meno, priezvisko
+[ ] meno, priezvisko
 
-- [] datum registracie
+- [ ] datum registracie
 
 permanentka (datum zaciatku platnosti)
 
